@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Collection</title>
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/products.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <h3><a href="glamera.html" class="logo-name">GlamEra</a></h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">ContactUs</a></li>
+            <li><a href="login.html" id="login">Login</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="main-head-of-products">Women's Collection</h2>
+    <center><hr class="products-hr"></center>
+
+    <!-- Women's Clothing -->
+    <h3>Kurti</h3>
+    <div class="kurti">
+        <img src="images/products-img/women/kurti1.png" id="AKS Kurta with Plazzzo & Dupatta || Rs.1799" onclick="add(this.id)">
+        <img src="images/products-img/women/kurti2.png" id="Nayo Women Solid Kurta with Trouser || Rs.1649" onclick="add(this.id)">
+        <img src="images/products-img/women/kurti3.png" id="AKS Printed Staight Kurta || Rs.659" onclick="add(this.id)">
+        <img src="images/products-img/women/kurti4.png" id="Fabindia Slim Fit Straight Kurta || Rs.1990" onclick="add(this.id)">
+    </div>
+
+    <h3>Western Wear</h3>
+    <div class="western">
+        <img src="images/products-img/women/western1.png" id="Ives Solid Shirt Style Top || Rs.549" onclick="add(this.id)">
+        <img src="images/products-img/women/western2.png" id="Style Quotient Solid Top || Rs.554" onclick="add(this.id)">
+        <img src="images/products-img/women/western3.png" id="HERE&NOW Printed A-Line Top || Rs.549" onclick="add(this.id)">
+        <img src="images/products-img/women/western4.png" id="SASSAFRAS Ruffled Shirt Style Top || Rs. 549" onclick="add(this.id)">
+    </div>
+
+    <!-- Women's Shoes -->
+    <h3>Sports Shoes</h3>
+    <div class="g-shoes">
+        <img src="images/products-img/women/g-shoe1.png" id="PUMA Women LQDCell || Rs.6999" onclick="add(this.id)">
+        <img src="images/products-img/women/g-shoe2.png" id="ADIDAS Women Ultraboost19 Running || Rs.11899" onclick="add(this.id)">
+        <img src="images/products-img/women/g-shoe3.png" id="HRX Women Absolute Run || Rs.1549" onclick="add(this.id)">
+        <img src="images/products-img/women/g-shoe4.png" id="Skechers Women GO RUN || Rs.3249" onclick="add(this.id)">
+    </div>
+
+    <h3>Heels</h3>
+    <div class="heels">
+        <img src="images/products-img/women/heels1.png" id="Shetopia Women Heels || Rs.499" onclick="add(this.id)">
+        <img src="images/products-img/women/heels2.png" id="ZAPATOZ Women Heeled Boots || Rs.527" onclick="add(this.id)">
+        <img src="images/products-img/women/heels3.png" id="Allen Solly Women Solid Wedged || Rs.2499" onclick="add(this.id)">
+        <img src="images/products-img/women/heels4.png" id="Shoetopia Women Heels || Rs.499" onclick="add(this.id)">
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-details">
+        <h2 class="head-of-cart">Your Cart</h2>
+        <hr class="hr-of-cart-head">
+        <ul id="ul_pr"></ul>
+        <button class="btn-clear-list" onclick="emptyList()">Clear My List</button>
+        <br>
+        <small>Can't see anything? Click & add your favorite fashion to the <span class="colored-word">Shopping List!</span></small>
+    </div>
+
+    <script src="js/products.js"></script>
+</body>
+</html>

@@ -1,44 +1,51 @@
-/* Kids' Section */
-.kids-clothing, .kids-shoes, .kids-accessories {
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
 }
 
-.kids-clothing img, 
-.kids-shoes img, 
-.kids-accessories img {
-    width: 180px;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+.logo h3 a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
 }
 
-.kids-clothing img:hover, 
-.kids-shoes img:hover, 
-.kids-accessories img:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+.nav-links {
+    list-style: none;
+    display: flex;
 }
 
-/* Styling for the Kids Section Heading */
-h1 span.colored-word {
-    color: #ff6f61;  /* Soft red color */
-    font-weight: bold;
+.nav-links li {
+    padding: 0 15px;
 }
 
-/* Message at the End */
-.sry-msg {
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+/* Page Title */
+.main-head-of-products {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 28px;
     font-weight: bold;
-    color: #555;
-}
-
-.last-hr-of-product {
-    width: 50%;
-    border: 1px solid #ff6f61;
+    color: #333;
+    margin-top: 20px;
 }

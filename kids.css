@@ -1,0 +1,44 @@
+/* Kids' Section */
+.kids-clothing, .kids-shoes, .kids-accessories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.kids-clothing img, 
+.kids-shoes img, 
+.kids-accessories img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.kids-clothing img:hover, 
+.kids-shoes img:hover, 
+.kids-accessories img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the Kids Section Heading */
+h1 span.colored-word {
+    color: #ff6f61;  /* Soft red color */
+    font-weight: bold;
+}
+
+/* Message at the End */
+.sry-msg {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+}
+
+.last-hr-of-product {
+    width: 50%;
+    border: 1px solid #ff6f61;
+}

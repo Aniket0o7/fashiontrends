@@ -1,24 +1,44 @@
 var ul = document.getElementById("ul_pr");
-var li = document.querySelectorAll("li");
 
-function add(id){
-    // var del_new = document.createElement("button");
+function add(id) {
     var li_new = document.createElement("li");
     var li_inp = document.createTextNode(id);
     li_new.appendChild(li_inp);
-    // li_new.appendChild(document.createTextNode( '\u00A0\u00A0' ) );
     ul.appendChild(li_new);
-    // var del_inp = document.createTextNode("Del");
-    // del_new.appendChild(del_inp);
-    // li_new.appendChild(del_new);
     ul.appendChild(document.createElement("br"));
 }
 
+// Function to clear cart
 window.emptyList = function () {
-    var ul = document.querySelector('#ul_pr');
-    var listLength = ul.children.length;
-  
-    for (i = 0; i < listLength; i++) {
-      ul.removeChild(ul.children[0]);
+    while (ul.firstChild) {
+        ul.removeChild(ul.firstChild);
     }
-  }
+};
+
+// Dropdown Menu Functionality
+document.addEventListener("DOMContentLoaded", () => {
+    const dropdowns = document.querySelectorAll(".dropdown");
+
+    dropdowns.forEach((dropdown) => {
+        dropdown.addEventListener("click", (e) => {
+            e.stopPropagation(); // Prevent bubbling
+
+            // Toggle active class on current dropdown
+            dropdown.classList.toggle("active");
+
+            // Close other dropdowns
+            dropdowns.forEach((otherDropdown) => {
+                if (otherDropdown !== dropdown) {
+                    otherDropdown.classList.remove("active");
+                }
+            });
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener("click", (e) => {
+        if (!e.target.closest(".dropdown")) {
+            dropdowns.forEach((dropdown) => dropdown.classList.remove("active"));
+        }
+    });
+});

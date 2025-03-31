@@ -21,5 +21,4 @@ Merlin Fashion doesn't include anything related to database, it is just a HTML, 
   </p>
  <p align="center">
  Saw all the other pages?🧐 Go check it out now!🥳 
-   https://singh-shivani.github.io/Merlin-Fashion/
 </p>
